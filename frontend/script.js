@@ -113,7 +113,7 @@ async function sendMessage() {
   showTyping();
 
   try {
-    const response = await fetch("http://localhost:3000/chat", {
+    const response = await fetch("https://chatbot-vintage-cuts-bwzb.onrender.com/chat", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
