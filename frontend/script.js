@@ -113,7 +113,7 @@ async function sendMessage() {
   showTyping();
 
   try {
-    const response = await fetch("http://localhost:3000/chat", {
+    const response = await fetch("https://chatbot-vintage-cuts-bwzb.onrender.com/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -162,7 +162,7 @@ function setStatus(state) {
 
 async function checkServerStatus() {
   try {
-    const response = await fetch("http://localhost:3000/", {
+    const response = await fetch("https://chatbot-vintage-cuts-bwzb.onrender.com/", {
       method: "GET",
     });
     setStatus(response.ok ? "online" : "offline");
